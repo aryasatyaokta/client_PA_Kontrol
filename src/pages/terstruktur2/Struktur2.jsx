@@ -54,7 +54,7 @@ export default function Struktur2() {
   const handleResultHistory = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk2');
+      const response = await fetch('http://localhost:3030/api/resultstruk2');
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -82,7 +82,7 @@ export default function Struktur2() {
   const handleResultHistory2 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk5');
+      const response = await fetch('http://localhost:3030/api/resultstruk5');
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -110,7 +110,7 @@ export default function Struktur2() {
   const handleResultHistory3 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk6');
+      const response = await fetch('http://localhost:3030/api/resultstruk6');
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -148,7 +148,7 @@ export default function Struktur2() {
   }, [results.name || results])
 
   async function onRestart(){
-    await axios.delete(`http://localhost:5000/api/resultstruk2?name=${sessionStorage.getItem('name')}`)
+    await axios.delete(`http://localhost:3030/api/resultstruk2?name=${sessionStorage.getItem('name')}`)
     navigate("/latihan-struktur")
     navigate(0);
   }

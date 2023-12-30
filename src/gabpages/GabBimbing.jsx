@@ -70,7 +70,7 @@ export default function GabBimbing() {
   const handleResultHistory = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/result'); 
+      const response = await fetch('http://localhost:3030/api/result'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -98,7 +98,7 @@ export default function GabBimbing() {
   const handleResultHistoryStruk = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk'); 
+      const response = await fetch('http://localhost:3030/api/resultstruk'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -126,7 +126,7 @@ export default function GabBimbing() {
   const handleResultHistoryStruk2 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk2'); 
+      const response = await fetch('http://localhost:3030/api/resultstruk2'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -154,7 +154,7 @@ export default function GabBimbing() {
   const handleResultHistoryStruk3 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk3'); 
+      const response = await fetch('http://localhost:3030/api/resultstruk3'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -182,7 +182,7 @@ export default function GabBimbing() {
   const handleResultHistoryStruk4 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk4'); 
+      const response = await fetch('http://localhost:3030/api/resultstruk4'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -210,7 +210,7 @@ export default function GabBimbing() {
   const handleResultHistoryStruk5 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk5'); 
+      const response = await fetch('http://localhost:3030/api/resultstruk5'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -238,7 +238,7 @@ export default function GabBimbing() {
   const handleResultHistoryStruk6 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:5000/api/resultstruk6'); 
+      const response = await fetch('http://localhost:3030/api/resultstruk6'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){

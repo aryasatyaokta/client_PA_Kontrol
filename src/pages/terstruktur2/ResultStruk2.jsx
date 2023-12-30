@@ -35,7 +35,7 @@ export default function ResultStruk2() {
         achived : flag ? "Passed" : "Failed" });
 
     async function onRestart(){
-      await axios.delete(`http://localhost:5000/api/resultstruk2?name=${sessionStorage.getItem('name')}`)
+      await axios.delete(`http://localhost:3030/api/resultstruk2?name=${sessionStorage.getItem('name')}`)
       navigate("/latihan-struktur")
       navigate(0);
     }

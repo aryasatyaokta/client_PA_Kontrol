@@ -36,7 +36,7 @@ export default function ResultStruk5() {
         achived : flag ? "Passed" : "Failed" });
 
     async function onRestart(){
-      await axios.delete(`http://localhost:5000/api/resultstruk5?name=${sessionStorage.getItem('name')}`)
+      await axios.delete(`http://localhost:3030/api/resultstruk5?name=${sessionStorage.getItem('name')}`)
       navigate("/lat-struktur")
       navigate(0);
     }

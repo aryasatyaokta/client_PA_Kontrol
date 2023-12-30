@@ -32,7 +32,7 @@ export default function ResultBim2() {
         achived : flag ? "Passed" : "Failed" });
 
     async function onRestart(){
-      await axios.delete(`http://localhost:5000/api/resultbim2?name=${sessionStorage.getItem('name')}`)
+      await axios.delete(`http://localhost:3030/api/resultbim2?name=${sessionStorage.getItem('name')}`)
       navigate("/latihan-terbimbing")
       navigate(0);
     }

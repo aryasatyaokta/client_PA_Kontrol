@@ -23,7 +23,7 @@ export default function Register() {
       return;
     }
 
-    axios.post('http://localhost:5000/register', {
+    axios.post('http://localhost:3030/register', {
       name: name,
       absen: absen,
       email: email,

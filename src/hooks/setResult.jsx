@@ -54,7 +54,7 @@ export const usePublishResult = (resultData) => {
             (async () => {
                 try {
                     if (result.length !== 0 && username) {
-                        await postServerData(`http://localhost:5000/api/result`, resultData, (data) => data);
+                        await postServerData(`http://localhost:3030/api/result`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -100,7 +100,7 @@ export const usePublishResultStruk = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataStruk(`http://localhost:5000/api/resultstruk`, resultData, (data) => data);
+                        await postServerDataStruk(`http://localhost:3030/api/resultstruk`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -146,7 +146,7 @@ export const usePublishResultBim = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataBim(`http://localhost:5000/api/resultbim`, resultData, (data) => data);
+                        await postServerDataBim(`http://localhost:3030/api/resultbim`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -192,7 +192,7 @@ export const usePublishResultMan = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataMan(`http://localhost:5000/api/resultman`, resultData, (data) => data);
+                        await postServerDataMan(`http://localhost:3030/api/resultman`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -238,7 +238,7 @@ export const usePublishResultStruk2 = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataStruk2(`http://localhost:5000/api/resultstruk2`, resultData, (data) => data);
+                        await postServerDataStruk2(`http://localhost:3030/api/resultstruk2`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -283,7 +283,7 @@ export const usePublishResultBim2 = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataBim2(`http://localhost:5000/api/resultbim2`, resultData, (data) => data);
+                        await postServerDataBim2(`http://localhost:3030/api/resultbim2`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -328,7 +328,7 @@ export const usePublishResultMan2 = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataMan2(`http://localhost:5000/api/resultman2`, resultData, (data) => data);
+                        await postServerDataMan2(`http://localhost:3030/api/resultman2`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -374,7 +374,7 @@ export const usePublishResultPost = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataPost(`http://localhost:5000/api/resultpost`, resultData, (data) => data);
+                        await postServerDataPost(`http://localhost:3030/api/resultpost`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -419,7 +419,7 @@ export const usePublishResultPost2 = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataPost2(`http://localhost:5000/api/resultpost2`, resultData, (data) => data);
+                        await postServerDataPost2(`http://localhost:3030/api/resultpost2`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -466,7 +466,7 @@ export const usePublishResultStruk3 = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataStruk3(`http://localhost:5000/api/resultstruk3`, resultData, (data) => data);
+                        await postServerDataStruk3(`http://localhost:3030/api/resultstruk3`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -511,7 +511,7 @@ export const usePublishResultStruk4 = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataStruk4(`http://localhost:5000/api/resultstruk4`, resultData, (data) => data);
+                        await postServerDataStruk4(`http://localhost:3030/api/resultstruk4`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -556,7 +556,7 @@ export const usePublishResultStruk5 = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataStruk5(`http://localhost:5000/api/resultstruk5`, resultData, (data) => data);
+                        await postServerDataStruk5(`http://localhost:3030/api/resultstruk5`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {
@@ -601,7 +601,7 @@ export const usePublishResultStruk6 = (resultData) => {
             (async () => {
                 try {
                     if (result !== 0 && username) {
-                        await postServerDataStruk6(`http://localhost:5000/api/resultstruk6`, resultData, (data) => data);
+                        await postServerDataStruk6(`http://localhost:3030/api/resultstruk6`, resultData, (data) => data);
                         console.log('Successfully posted data');
                         setIsDataSent(true);
                     } else {

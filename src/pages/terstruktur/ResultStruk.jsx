@@ -35,7 +35,7 @@ export default function ResultStruk() {
       });
 
     async function onRestart(){
-      await axios.delete(`http://localhost:5000/api/resultstruk?name=${sessionStorage.getItem('name')}`)
+      await axios.delete(`http://localhost:3030/api/resultstruk?name=${sessionStorage.getItem('name')}`)
       navigate("/latihan-struktur")
       navigate(0);
     }

@@ -33,7 +33,7 @@ export default function ResultPost() {
         achived : flag ? "Passed" : "Failed" });
 
     async function onRestart(){
-      await axios.delete(`http://localhost:5000/api/resultpost?name=${sessionStorage.getItem('name')}`)
+      await axios.delete(`http://localhost:3030/api/resultpost?name=${sessionStorage.getItem('name')}`)
       navigate("/materii")
       navigate(0);
     }
