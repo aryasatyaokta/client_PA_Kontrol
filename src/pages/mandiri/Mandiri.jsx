@@ -40,7 +40,7 @@ export default function Mandiri() {
   const handleResultHistory = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:3030/api/resultman'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultman'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -70,7 +70,7 @@ export default function Mandiri() {
   }, [results.name || results])
 
   async function onRestart(){
-    await axios.delete(`http://localhost:3030/api/resultman?name=${sessionStorage.getItem('name')}`)
+    await axios.delete(`https://server-pa-kontrol.vercel.app//api/resultman?name=${sessionStorage.getItem('name')}`)
     navigate("/latihan-mandirii")
     navigate(0);
   }

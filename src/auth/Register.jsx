@@ -23,7 +23,7 @@ export default function Register() {
       return;
     }
 
-    axios.post('http://localhost:3030/register', {
+    axios.post('https://server-pa-kontrol.vercel.app//register', {
       name: name,
       absen: absen,
       email: email,

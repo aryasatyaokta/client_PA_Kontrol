@@ -28,7 +28,7 @@ export default function GabMateri() {
   const handleResultHistory = async () => {
     try {
       let temp_data = []
-      const response = await fetch('http://localhost:3030/api/result'); 
+      const response = await fetch('https://server-pa-kontrol.vercel.app//api/result'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){

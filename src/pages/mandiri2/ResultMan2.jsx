@@ -34,7 +34,7 @@ export default function ResultMan2() {
         achived : flag ? "Passed" : "Failed" });
 
     async function onRestart(){
-      await axios.delete(`http://localhost:3030/api/resultman2?name=${sessionStorage.getItem('name')}`)
+      await axios.delete(`https://server-pa-kontrol.vercel.app//api/resultman2?name=${sessionStorage.getItem('name')}`)
       navigate("/latihan-mandirii")
       navigate(0);
     }
