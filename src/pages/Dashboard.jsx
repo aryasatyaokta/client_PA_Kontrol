@@ -198,7 +198,7 @@ export default function Dashboard() {
   const handleResultHistory = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/result'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/result'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -230,7 +230,7 @@ export default function Dashboard() {
   const handleResultHistoryStruk = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultstruk'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultstruk'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -262,7 +262,7 @@ export default function Dashboard() {
   const handleResultHistoryStruk2 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultstruk2'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultstruk2'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -294,7 +294,7 @@ export default function Dashboard() {
   const handleResultHistoryStruk3 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultstruk3'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultstruk3'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -326,7 +326,7 @@ export default function Dashboard() {
   const handleResultHistoryStruk5 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultstruk5'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultstruk5'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -358,7 +358,7 @@ export default function Dashboard() {
   const handleResultHistoryStruk4 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultstruk4'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultstruk4'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -390,7 +390,7 @@ export default function Dashboard() {
   const handleResultHistoryStruk6 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultstruk6'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultstruk6'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -422,7 +422,7 @@ export default function Dashboard() {
   const handleResultHistoryBim = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultbim'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultbim'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -454,7 +454,7 @@ export default function Dashboard() {
   const handleResultHistoryBim2 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultbim2'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultbim2'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -486,7 +486,7 @@ export default function Dashboard() {
   const handleResultHistoryMan = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultman'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultman'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -518,7 +518,7 @@ export default function Dashboard() {
   const handleResultHistoryMan2 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultman2'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultman2'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -550,7 +550,7 @@ export default function Dashboard() {
   const handleResultHistoryPost = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultpost'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultpost'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -582,7 +582,7 @@ export default function Dashboard() {
   const handleResultHistoryPost2 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultpost2'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultpost2'); // Ganti 'URL_API/results' dengan URL endpoint API hasil result kamu
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){

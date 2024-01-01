@@ -42,7 +42,7 @@ export default function GabMandiri() {
   const handleResultHistory = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/result'); 
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/result'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -70,7 +70,7 @@ export default function GabMandiri() {
   const handleResultHistoryBim = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultbim'); 
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultbim'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -98,7 +98,7 @@ export default function GabMandiri() {
   const handleResultHistoryBim2 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultbim2'); 
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultbim2'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){

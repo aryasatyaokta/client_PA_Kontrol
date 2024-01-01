@@ -33,7 +33,7 @@ export default function ResultPost() {
         achived : flag ? "Passed" : "Failed" });
 
     async function onRestart(){
-      await axios.delete(`https://server-pa-kontrol.vercel.app//api/resultpost?name=${sessionStorage.getItem('name')}`)
+      await axios.delete(`https://server-pa-kontrol.vercel.app/api/resultpost?name=${sessionStorage.getItem('name')}`)
       navigate("/materii")
       navigate(0);
     }

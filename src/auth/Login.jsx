@@ -11,7 +11,7 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://server-pa-kontrol.vercel.app//login', {
+    axios.post('https://server-pa-kontrol.vercel.app/login', {
       email: email,
       password: password
     })

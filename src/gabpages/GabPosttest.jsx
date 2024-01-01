@@ -42,7 +42,7 @@ export default function GabPosttest() {
   const handleResultHistory = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/result'); 
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/result'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -70,7 +70,7 @@ export default function GabPosttest() {
   const handleResultHistoryMan = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultman'); 
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultman'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -98,7 +98,7 @@ export default function GabPosttest() {
   const handleResultHistoryMan2 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultman2'); 
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultman2'); 
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){

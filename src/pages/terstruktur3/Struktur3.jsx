@@ -29,7 +29,7 @@ export default function Struktur3() {
   const handleResultHistory3 = async () => {
     try {
       let temp_data = []
-      const response = await fetch('https://server-pa-kontrol.vercel.app//api/resultstruk3');
+      const response = await fetch('https://server-pa-kontrol.vercel.app/api/resultstruk3');
       const data = await response.json();
       for(let i = 0; i < data.length; i++){
         if(data[i].username == sessionStorage.getItem('name')){
@@ -59,7 +59,7 @@ export default function Struktur3() {
   }, [results.name || results])
 
   async function onRestart(){
-    await axios.delete(`https://server-pa-kontrol.vercel.app//api/resultstruk3?name=${sessionStorage.getItem('name')}`)
+    await axios.delete(`https://server-pa-kontrol.vercel.app/api/resultstruk3?name=${sessionStorage.getItem('name')}`)
     navigate("/latihan-struktur")
     navigate(0);
   }

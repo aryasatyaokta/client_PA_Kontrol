@@ -33,7 +33,7 @@ export default function ResultStruk4() {
         achived : flag ? "Passed" : "Failed" });
 
     async function onRestart(){
-      await axios.delete(`https://server-pa-kontrol.vercel.app//api/resultstruk4?name=${sessionStorage.getItem('name')}`)
+      await axios.delete(`https://server-pa-kontrol.vercel.app/api/resultstruk4?name=${sessionStorage.getItem('name')}`)
       navigate("/latihan-struktur")
       navigate(0);
     }
