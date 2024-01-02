@@ -143,10 +143,10 @@ export default function GabMandiri() {
                 <div className="col-span-2 justify-center items-center rounded-lg bg-gray-50 h-fulll dark:bg-gray-800">
                   <p className='mt-24 text-xl font-bold text-[#9A3B3B] text-center my-5'>Kerjakan Latihan Terbimbing Dulu yaa!</p>
                 </div>
-                <div className="flex flex-col items-center justify-center border-yellow-700 border-2 rounded-xl drop-shadow-xl">
+                {/* <div className="flex flex-col items-center justify-center border-yellow-700 border-2 rounded-xl drop-shadow-xl">
                   <img className='w-52' alt='' src={Welcome}/>
                       <p className="text-[#9A3B3B] mt-4 text-center">Kerjakan Latihan Terbimbing Dulu yaa!</p>
-                </div>
+                </div> */}
                 {/* <div className='flex flex-col col-span-3 items-end justify-end mr-28'>
                   <button onClick={handleToggleAudio} className="bg-[#9A3B3B] px-4 py-2 text-white rounded-lg">
                     {isPlaying ? 'Pause Joko' : 'Suara Joko'}
