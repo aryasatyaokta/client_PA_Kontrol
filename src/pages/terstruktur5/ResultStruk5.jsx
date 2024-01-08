@@ -33,7 +33,7 @@ export default function ResultStruk5() {
         username : sessionStorage.getItem('name'),
         attempts,
         points: earnPoints,
-        achived : flag ? "Passed" : "Failed" });
+        achived : flag ? "Berhasil" : "Gagal" });
 
     async function onRestart(){
       await axios.delete(`https://server-pa-kontrol.vercel.app/api/resultstruk5?name=${sessionStorage.getItem('name')}`)
@@ -89,7 +89,7 @@ export default function ResultStruk5() {
                   <div className='flex justify-between px-2 py-2'>
                     <span>Status Nilai: </span>
                     <span style={{ color: `${earnPoints >= 80 ? "#82CD47" : "#ff2a66"}` }} className='font-bold'>
-                      {earnPoints >= 80 ? "Passed" : "Failed"}
+                      {earnPoints >= 80 ? "Berhasil" : "Gagal"}
                     </span>
                   </div>
                 </div>  

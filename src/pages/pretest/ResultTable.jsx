@@ -15,7 +15,7 @@ export default function ResultTable() {
                 <tr className='text-center font-medium'>
                     <td>Aryasatya</td>
                     <td>03</td>
-                    <td>Passed</td>
+                    <td>Berhasil</td>
                 </tr>
             </tbody>
         </table>

@@ -31,7 +31,7 @@ export default function ResultStruk() {
         username : sessionStorage.getItem('name'),
         attempts,
         points: earnPoints,
-        achived : flag ? "Passed" : "Failed" 
+        achived : flag ? "Berhasil" : "Gagal" 
       });
 
     async function onRestart(){
@@ -87,7 +87,7 @@ export default function ResultStruk() {
                   </div>
                   <div className='flex justify-between px-2 py-2'>
                     <span>Status Nilai: </span>
-                    <span style={{color : `${flag ? "#82CD47" : "#ff2a66"}`}} className='font-bold'>{flag ? "Passed" : "Failed"}</span>
+                    <span style={{color : `${flag ? "#82CD47" : "#ff2a66"}`}} className='font-bold'>{flag ? "Berhasil" : "Gagal"}</span>
                   </div>
                 </div>  
               </div>
