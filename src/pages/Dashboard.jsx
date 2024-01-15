@@ -683,7 +683,7 @@ export default function Dashboard() {
                             <>
                               {results.nilai < 80 ? (
                               <>
-                                {resultStruk.name && resultStruk.jawab && resultStruk.kuis ? (
+                                {resultStruk.name && resultStruk.jawab && resultStruk.nilai > 80  ? (
                                   <svg className="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                   </svg>
@@ -701,7 +701,7 @@ export default function Dashboard() {
                               </>
                               ) : (
                                 <>
-                                  {resultStruk2.name && resultStruk2.jawab && resultStruk2.kuis ? (
+                                  {resultStruk2.name && resultStruk2.jawab && resultStruk2.nilai > 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
@@ -733,13 +733,13 @@ export default function Dashboard() {
                             <>
                               {results.nilai < 80 ? (
                               <>
-                                {resultStruk3.name && resultStruk3.jawab && resultStruk3.kuis ? (
+                                {resultStruk3.name && resultStruk3.jawab && resultStruk3.nilai >= 80 ? (
                                   <svg className="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                   </svg>
                                 ) : (
                                   <>
-                                    {resultStruk.name ? (
+                                    {resultStruk.nilai > 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-lat-struktur2'} onClick={startQuizStruk3}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -751,13 +751,13 @@ export default function Dashboard() {
                               </>
                               ) : (
                                 <>
-                                  {resultStruk5.name && resultStruk5.jawab && resultStruk5.kuis ? (
+                                  {resultStruk5.name && resultStruk5.jawab && resultStruk5.nilai >= 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
                                   ) : (
                                   <>
-                                    {resultStruk2.name ? (
+                                    {resultStruk2.nilai > 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-lat-struktur4'} onClick={startQuizStruk5}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -783,13 +783,13 @@ export default function Dashboard() {
                             <>
                               {results.nilai < 80 ? (
                               <>
-                                {resultStruk4.name && resultStruk4.jawab && resultStruk4.kuis ? (
+                                {resultStruk4.name && resultStruk4.jawab && resultStruk4.nilai >= 80 ? (
                                   <svg className="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                   </svg>
                                 ) : (
                                   <>
-                                    {resultStruk3.name ? (
+                                    {resultStruk3.nilai >= 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-lat-struktur3'} onClick={startQuizStruk4}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -801,13 +801,13 @@ export default function Dashboard() {
                               </>
                               ) : (
                                 <>
-                                  {resultStruk6.name && resultStruk6.jawab && resultStruk6.kuis ? (
+                                  {resultStruk6.name && resultStruk6.jawab && resultStruk6.nilai >= 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
                                   ) : (
                                   <>
-                                    {resultStruk5.name ? (
+                                    {resultStruk5.nilai >= 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-lat-struktur5'} onClick={startQuizStruk6}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -833,13 +833,13 @@ export default function Dashboard() {
                             <>
                               {results.nilai < 80 ? (
                                 <>
-                                  {resultBim.name && resultBim.jawab && resultBim.kuis ? (
+                                  {resultBim.name && resultBim.jawab && resultBim.nilai >= 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
                                   ) : (
                                   <>
-                                    {resultStruk4.name ? (
+                                    {resultStruk4.nilai >= 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-lat-terbimbing'} onClick={startQuizBim}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -851,13 +851,13 @@ export default function Dashboard() {
                                 </>
                               ) : (
                                 <>
-                                  {resultBim2.name && resultBim2.jawab && resultBim2.kuis ? (
+                                  {resultBim2.name && resultBim2.jawab && resultBim2.nilai >= 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
                                   ) : (
                                   <>
-                                    {resultStruk6.name ? (
+                                    {resultStruk6.nilai >= 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-lat-bimbing'} onClick={startQuizBim2}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -883,13 +883,13 @@ export default function Dashboard() {
                             <>
                               {results.nilai < 80 ? (
                                 <>
-                                  {resultMan.name && resultMan.jawab && resultMan.kuis ? (
+                                  {resultMan.name && resultMan.jawab && resultMan.nilai >= 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
                                   ) : (
                                   <>
-                                    {resultBim.name ? (
+                                    {resultBim.nilai >= 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-lat-mandiri'} onClick={startQuizMan}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -901,13 +901,13 @@ export default function Dashboard() {
                                 </>
                               ) : (
                                 <>
-                                  {resultMan2.name && resultMan2.jawab && resultMan2.kuis ? (
+                                  {resultMan2.name && resultMan2.jawab && resultMan2.nilai >= 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
                                   ) : (
                                   <>
-                                    {resultBim2.name ? (
+                                    {resultBim2.nilai >= 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-latihan-mandiri'} onClick={startQuizMan2}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -933,13 +933,13 @@ export default function Dashboard() {
                             <>
                               {results.nilai < 80 ? (
                                 <>
-                                  {resultPost.name && resultPost.jawab && resultPost.kuis ? (
+                                  {resultPost.name && resultPost.jawab && resultPost.nilai >= 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
                                   ) : (
                                   <>
-                                    {resultMan.name ? (
+                                    {resultMan.nilai >= 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-post'} onClick={startQuizPost}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -951,13 +951,13 @@ export default function Dashboard() {
                                 </>
                               ) : (
                                 <>
-                                  {resultPost2.name && resultPost2.jawab && resultPost2.kuis ? (
+                                  {resultPost2.name && resultPost2.jawab && resultPost2.nilai >= 80 ? (
                                     <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
                                     </svg>
                                   ) : (
                                     <>
-                                    {resultMan2.name ? (
+                                    {resultMan2.nilai >= 80 ? (
                                       <Link className='flex-col flex bg-[#9A3B3B] w-20 h-8 text-white rounded-md text-center justify-center items-center' to={'/quiz-test'} onClick={startQuizPost2}>Mulai</Link>
                                     ) : (
                                       <svg className="w-3 h-3 text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">

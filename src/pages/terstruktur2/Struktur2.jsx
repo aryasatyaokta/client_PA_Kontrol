@@ -181,12 +181,12 @@ export default function Struktur2() {
                     </div>
                     <div className='flex justify-between px-2 mt-5'>
                       <span>Status Nilai: </span>
-                      <span className={results.nilai < 80 ? 'font-bold text-red-500' : 'font-bold text-[#82CD47]'}>
-                        {results.kuis}
+                      <span className={results.nilai > 80 ? 'font-bold text-[#82CD47]' : 'font-bold text-red-500'}>
+                          {results.nilai > 80 ? "Berhasil" : "Gagal"}
                       </span>
                     </div>
                   </div>
-                  <button onClick={onRestart} className={results.nilai < 80 ? 'bg-[#9A3B3B] px-16 py-2 text-white rounded-lg mt-3' : 'hidden'}>
+                  <button onClick={onRestart} className={results.nilai <= 80 ? 'bg-[#9A3B3B] px-16 py-2 text-white rounded-lg mt-3' : 'hidden'}>
                     Restart
                   </button>
                 </div>
@@ -236,7 +236,7 @@ export default function Struktur2() {
         }
         <div className='gap-4 mb-2 font-[Poppins]'>
           <div className='col-span-2 justify-center items-center rounded-lg bg-gray-50 h-[300px] dark:bg-gray-800'>
-            {results.nilai >=80 ? (
+            {results.nilai > 80 ? (
               <Struktur5/>
             ) : (
               <div className="p-4 sm:ml-64">

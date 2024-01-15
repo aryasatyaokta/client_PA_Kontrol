@@ -87,13 +87,15 @@ export default function ResultStruk() {
                   </div>
                   <div className='flex justify-between px-2 py-2'>
                     <span>Status Nilai: </span>
-                    <span style={{color : `${flag ? "#82CD47" : "#ff2a66"}`}} className='font-bold'>{flag ? "Berhasil" : "Gagal"}</span>
+                    <span style={{color : `${earnPoints > 80 ? "#82CD47" : "#ff2a66"}`}} className='font-bold'>
+                      {earnPoints > 80 ? "Berhasil" : "Gagal"}
+                  </span>
                   </div>
                 </div>  
               </div>
 
               <div className='flex flex-col items-center justify-center'>
-                {earnPoints < 80 ? (
+                {earnPoints <= 80 ? (
                   <button onClick={onRestart} className='bg-[#9A3B3B] px-16 py-2 text-white rounded-lg'>Ulangi</button>
                 ) : (
                   <Link to='/lat-terstruktur' className='bg-[#9A3B3B] px-16 py-2 text-white rounded-lg'>Selanjutnya</Link>

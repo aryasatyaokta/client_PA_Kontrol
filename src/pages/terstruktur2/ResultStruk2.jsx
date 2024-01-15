@@ -59,7 +59,7 @@ export default function ResultStruk2() {
         <div className="p-4  mt-14">
           <div className="gap-4 mb-4 font-[Poppins]">
             <div className="col-span-2 justify-center items-center rounded-lg bg-gray-50 h-[600px] dark:bg-gray-800">
-              <p className='text-xl font-bold text-[#9A3B3B] text-center my-5'>Hasil Latihan Terstruktur Sandhangan</p>
+              <p className='text-xl font-bold text-[#9A3B3B] text-center my-5'>Hasil Latihan Terstruktur 1 Sandhangan</p>
               <div className=''>
                 <p className="text-lg font-semibold text-[#6E6E6E] text-center">Soal Kelas 5 SD</p>
               </div>
@@ -87,13 +87,15 @@ export default function ResultStruk2() {
                   </div>
                   <div className='flex justify-between px-2 py-2'>
                     <span>Status Nilai: </span>
-                    <span style={{color : `${flag ? "#82CD47" : "#ff2a66"}`}} className='font-bold'>{flag ? "Berhasil" : "Gagal"}</span>
+                    <span style={{color : `${earnPoints > 80 ? "#82CD47" : "#ff2a66"}`}} className='font-bold'>
+                    {earnPoints > 80 ? "Berhasil" : "Gagal"}
+                  </span>
                   </div>
                 </div>  
               </div>
 
               <div className='flex flex-col items-center justify-center'>
-                {earnPoints < 80 ? (
+                {earnPoints <= 80 ? (
                   <button onClick={onRestart} className='bg-[#9A3B3B] px-16 py-2 text-white rounded-lg'>Ulangi</button>
                 ) : (
                   <Link to='/lat-struktur' className='bg-[#9A3B3B] px-16 py-2 text-white rounded-lg'>Selanjutnya</Link>
